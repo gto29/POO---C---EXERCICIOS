@@ -1,0 +1,178 @@
+double[] numeros = new double[5];
+double valorTotal = 0;
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine($"Digite aqui seu {i + 1}º numero");
+    numeros[i] = Convert.ToDouble(Console.ReadLine());
+    valorTotal += numeros[i];
+}
+Console.WriteLine("Os valores digitados pelo usuario sao:");
+for(int i = 0; i < 5; i++)
+{
+    Console.WriteLine($"o {i + 1}º valor digitado foi {numeros[i]} ");
+}
+Console.WriteLine($"O valor total é: {valorTotal} ");
+Console.ReadKey();
+
+
+
+
+
+
+//declarar variáveis
+
+double valor, valorTotal = 0;
+
+//Entrada de Dados(REPETIÇAO)
+for(int i = 0;i<= 5; i++)
+{
+    Console.WriteLine($"Digite o {i+1}º valor ");
+    valor = Convert.ToDouble(Console.ReadLine());
+    valorTotal += valor;
+}
+Console.WriteLine($"os valor total calculado é {valorTotal} ");
+
+
+
+
+
+
+
+
+
+//declarar variaveis
+
+double valor, valorTotal = 0;
+
+//REPETIÇÃO
+do
+{
+    Console.WriteLine("Digite aqui o valor para acumular ou 0 para sair ");
+    valor = Convert.ToDouble(Console.ReadLine());
+    //valorTotal = valor + valorTotal;
+    valorTotal += valor;
+} while (valor != 0);
+Console.WriteLine($"o valor total informado é : {valorTotal}");
+
+
+
+
+
+
+
+
+
+//declarar variáveis
+
+double valor, valorTotal = 0;
+Console.WriteLine("Digite aqui o valor para acumular ou 0 para sair ");
+valor = Convert.ToDouble(Console.ReadLine());
+
+//repetiçao//WHILE
+while (valor != 0)
+{
+    valorTotal = valor + valorTotal;
+    Console.WriteLine("Digite aqui o valor para acumular ou 0 para sair ");
+    valor = Convert.ToDouble(Console.ReadLine());
+
+}
+//Saída
+Console.WriteLine($"o valor total é {valorTotal}");
+Console.ReadKey();
+
+
+
+
+
+
+
+
+
+//declarar variáveis
+string resultado;
+double nota;
+//Saida e leitura
+Console.WriteLine("Digite a nota");
+nota = Convert.ToDouble(Console.ReadLine());
+resultado = (nota > 7) ? "aprovado" : ((nota >= 6) && (nota <= 7)) ? "recuperaçao" : "reprovado";
+Console.WriteLine(resultado);
+
+
+
+
+
+
+
+//Declarar variaveis
+int numero;
+string diaSemana="";
+Console.WriteLine("Digite aqui o numero entre 1 e 7 para saber o dia da semana ");
+numero = Convert.ToInt32(Console.ReadLine());
+switch (numero)
+{
+    case 1:
+        diaSemana = "O número 1 corresponde ao domingo";
+        break;
+    case 2:
+        diaSemana = "O número 2 corresponde ao Segunda";
+        break;
+    case 3:
+        diaSemana = "O número 3 corresponde ao Terca-Feira";
+        break;
+    case 4:
+        diaSemana = "O número 4 corresponde ao Quarta-Feira";
+        break;
+    case 5:
+        diaSemana = "O número 5 corresponde ao Quinta-Feira";
+        break;
+    case 6:
+        diaSemana = "o numero 6 corresponde a Sexta-Feira";
+        break;
+    case 7:
+        diaSemana = "o numero 7 corresponde a Sabado";
+        break;
+    default:
+        Console.WriteLine("Informe um número entre 1 e 7 ");
+            break;
+
+}
+Console.WriteLine($"{diaSemana}");
+
+
+
+
+
+
+
+double nota;
+string resultado;
+Console.WriteLine("Digite a nota do aluno");
+nota = Convert.ToDouble(Console.ReadLine());
+////if (nota > 7)
+////{
+////    resultado = "aluno Aprovado";
+////}
+////else
+////{
+////    resultado = "aluno reprovado";
+////}
+///OPERADOR TERNARIO
+resultado = (nota > 7) ? "aprovado" : "reprovado";
+
+Console.WriteLine(resultado);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
